@@ -1,0 +1,38 @@
+{
+  "name": "xy-inc",
+  "version": "0.0.1",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&& node server/app.js",
+    "test": "npm run test-unit && npm run test-integration",
+    "test-integration": "set NODE_ENV=test&& mocha test/integration/*.js",
+    "test-unit": "set NODE_ENV=test&& mocha test/unit/*.js",
+    "lint": "eslint server/**/*.js",
+    "lint-fix": "eslint server/**/*.js --fix",
+    "apidoc": "apidoc -i server/api -o doc/apidoc"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cors": "^2.8.3",
+    "express": "~4.15.2",
+    "http-status": "^1.0.1",
+    "lodash": "~4.17.4",
+    "mongoose": "~4.9.3",
+    "q": "^1.5.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.5",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "mocha": "^3.2.0",
+    "morgan": "~1.8.1",
+    "should": "~11.2.1",
+    "sinon": "^2.1.0",
+    "supertest": "~3.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

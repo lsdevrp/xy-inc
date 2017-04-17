@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test-products",
+		"_postman_id": "a86a1c33-bf1c-c293-c021-c39a5e6c4109",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUT",
+			"request": {
+				"url": "http://localhost:9000/products/58eac59c2ff4211ee495fc6a",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"changed3\",\n  \"description\": \"test\",\n  \"price\": 10.5,\n  \"category\": \"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"url": "http://localhost:9000/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"test\",\n  \"description\": \"test\",\n  \"price\": 11.5,\n  \"category\": \"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"url": "http://localhost:9000/products/58eac59c2ff4211ee495fc6a",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"url": "http://localhost:9000/products/58eac59c2ff4211ee495fc6a",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"url": "http://localhost:9000/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipoContato\": \"test1\",\n    \"contato\": \"test1\",\n    \"email\": \"test1\",\n    \"telefone\": \"test1\",\n    \"mensagem\": \"test1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
