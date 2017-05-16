@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "server/app.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& node server/app.js",
+    "start": "NODE_ENV=development node server/app.js",
     "test": "npm run test-unit && npm run test-integration",
     "test-integration": "set NODE_ENV=test&& mocha test/integration/*.js",
     "test-unit": "set NODE_ENV=test&& mocha test/unit/*.js",
